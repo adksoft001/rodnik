@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /folio_cat/
+Disallow: /tag/
+Disallow: /folio/
+Disallow: /worked-for/
+
+Host: https://www.storodnik.ru/
+Sitemap: https://www.storodnik.ru/sitemap.xml

@@ -1,0 +1,86 @@
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #4054B2;
+}
+
+.footer_body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+}
+.footer_web {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+}
+.vk {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    background-image: url("/img/rodnik/vk.svg");
+    background-size: contain;
+    border-radius: 50px;
+    padding: 2px;
+    border: 5px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.insta {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    background-image: url("/img/rodnik/instagram.svg");
+    background-size: contain;
+    border-radius: 50px;
+    padding: 2px;
+    border: 5px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.footer_link {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer_link .column {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.footer_link a {
+    color: white;
+}
+.footer_copy {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-rigth: 0;
+    color: white;
+    align-self: center;
+}
+
+@media (max-width: 530px) {
+    footer {
+        height: auto !important;
+    }
+    .footer_body {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+    }
+}
