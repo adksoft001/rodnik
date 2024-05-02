@@ -1,4 +1,4 @@
-<?php
+    <?php
 /*
  * 30.11.2020
  * File: block.php
@@ -23,22 +23,15 @@
                     <div class="where_are_we__item__center" style="text-align: center;">
 
                         <div class="contacts-item__phone">
-                            <a class="map-phone main-phone" href="tel:+79782379838"><b>8 (978) 237-98-38 - Основной номер</b></a></br>
-                            <a class="map-phone" href="tel:+79780776282">8 (978) 077-62-82 - Дополнительный</a>
-                            </br>
-                            <a class="map-phone" href="tel:+79787321600"><b>8 (978) 732-16-00 - Кузовной
-                                    ремонт</b></a></br>
+                            <a class="map-phone main-phone" href="tel:+79780776282">8 (978) 077-62-82 - Основной номер</a></br>
+                            <a class="map-phone" href="tel:+79782379838"><b>8 (978) 237-98-38 - Дополнительный</b></a></br>
+                            <a class="map-phone" href="tel:+79787321600"><b>8 (978) 732-16-00 - Кузовной ремонт</b></a></br>
                             <a class="map-phone" href="tel:+79785408282">8 (978) 540-82-82 - Детейлинг и мойка</a></br>
-                            <a class="map-phone" href="tel:+79787626595"><b>8 (978) 762-65-95 -
-                                    Автозапчасти</b></a></br>
-
-
+                            <a class="map-phone" href="tel:+79787626595"><b>8 (978) 762-65-95 - Автозапчасти</b></a></br>
                             <a class="map-phone" href="tel:+79787192690">8 (978) 719-26-90 - Эвакуатор</a></br>
                             <a class="map-phone" href="tel:+79787135553"><b>8 (978) 713-55-53 - Техосмотр</b></a></br>
 
-
-<!--                            <a class="map-phone" href="tel:+79785208282">8 (978) 520-82-82 - Изготов-ие гос номера</a>-->
-
+                            <!--  <a class="map-phone" href="tel:+79785208282">8 (978) 520-82-82 - Изготов-ие гос номера</a>-->
 
                         </div>
 
@@ -61,6 +54,11 @@
                         <ul>
                             <li class="contact_item">по будням: с 08:30 до 18:00</li>
                             <li class="contact_item">Сб c 9:00 до 14:00. Вс выходной</li>
+                        </ul>
+
+                        <br>
+                        <div class="contact_tile">График работы на майские праздники:</div>
+                        <ul>
                             <li class="contact_item">6 мая - выходной</li>
                             <li class="contact_item">9-10 мая - выходной</li>
                         </ul>

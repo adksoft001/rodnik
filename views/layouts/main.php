@@ -149,9 +149,10 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                                     <?php elseif (in_array($serviceGroup['parent_id'], [4, 474, 500]) ||  in_array($serviceGroup['url'], ['pokraska-kuzova', 'kuzovnoj-remont', 'remont-avtostekol'])):?>
                                         <a class="phone__data1"  style="text-align: center"  href="tel:+79787321600"><b>8 (978) 732-16-00 - Основной телефон</b></a>
                                     <?php else: ?>
-                                        <a class="phone__data1" style="text-align: center"  href="tel:+79782379838"><b>8 (978) 237-98-38 - Основной телефон</b></a>
+                                        <a class="phone__data1"  href="tel:+79780776282"><b>8 (978) 077-62-82 - Основной телефон </b></a>
                                     <?php endif; ?>
-                                    <a class="phone__data1"  href="tel:+79780776282">8 (978) 077-62-82 - Дополнительный</a>
+                                    <a class="phone__data1" style="text-align: center"  href="tel:+79782379838">8 (978) 237-98-38 - Дополнительный</a>
+
                                 </div>
                             </div>
                         </div>
