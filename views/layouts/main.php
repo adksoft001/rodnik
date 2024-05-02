@@ -152,7 +152,7 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                                         <a class="phone__data1"  href="tel:+79780776282"><b>8 (978) 077-62-82 - Основной телефон </b></a>
                                     <?php endif; ?>
                                     <a class="phone__data1" style="text-align: center"  href="tel:+79782379838">8 (978) 237-98-38 - Дополнительный</a>
-                                    
+
                                 </div>
                             </div>
                         </div>
