@@ -320,31 +320,8 @@ class PricelistRODBlock extends Block
         ];
 
         $this->testprice = $price;
-        $brands = ['Mercedes-Benz',
-            'BMW',
-            'Volkswagen',
-            'Audi',
-            'Skoda',
-            'Ford',
-            'Chevrolet',
-            'Land Rover',
-            'Mitsubishi',
-            'Nissan',
-            'Lexus',
-            'Kia',
-            'Hyundai',
-            'Toyota',
-            'Infiniti',
-            'Honda',
-            'Mazda',
-            'Volvo',
-            'Opel',
-            'Peugeot',
-            'Renault',
-            'Citroen',
-            'Subaru'];
 
-        if ($this->brand && in_array($this->brand->name, $brands)) {
+        if ($this->brand && $this->brand->show_price) {
             $priceWithBrand = [];
             foreach ($price as $key => $items) {
                 $arr = [];
