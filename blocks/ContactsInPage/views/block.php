@@ -55,13 +55,6 @@
                             <li class="contact_item">по будням: с 08:30 до 18:00</li>
                             <li class="contact_item">Сб c 9:00 до 14:00. Вс выходной</li>
                         </ul>
-
-                        <br>
-                        <div class="contact_tile">График работы на майские праздники:</div>
-                        <ul>
-                            <li class="contact_item">6 мая - выходной</li>
-                            <li class="contact_item">9-10 мая - выходной</li>
-                        </ul>
                     </div>
                 </div>
             </div>
