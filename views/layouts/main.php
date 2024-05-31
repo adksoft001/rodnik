@@ -183,8 +183,8 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                                    target="_blank"
                                    style="font-size: 14px; font-weight: 800; color: black; text-decoration: none" >Межквартальный проезд 11А</a>
                                 <div class="contacts-item__phone">
-                                    <a class="phone__data " id="sev" href="tel:+79783041952">8 (978) 304-19-52</a>
-                                    <a class="map-phone" href="tel:+79780776282">8 (978) 077-62-82</a>
+                                    <a class="phone__data" id="sev" href="tel:+79783041952">8 (978) 304-19-52</a>
+                                    <a class="phone__data1" href="tel:+79780776282">8 (978) 077-62-82</a>
                                 </div>
                                 <div><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
                             </div>
