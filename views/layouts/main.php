@@ -149,10 +149,9 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                                     <?php elseif (in_array($serviceGroup['parent_id'], [4, 474, 500]) ||  in_array($serviceGroup['url'], ['pokraska-kuzova', 'kuzovnoj-remont', 'remont-avtostekol'])):?>
                                         <a class="phone__data1"  style="text-align: center"  href="tel:+79787321600"><b>8 (978) 732-16-00 - Основной телефон</b></a>
                                     <?php else: ?>
-                                        <a class="phone__data1"  href="tel:+79780776282"><b>8 (978) 077-62-82 - Основной телефон </b></a>
+                                        <a class="phone__data1"  href="tel:+79783041952"><b>8 (978) 304-19-52 - Основной телефон </b></a>
                                     <?php endif; ?>
-                                    <a class="phone__data1" style="text-align: center"  href="tel:+79782379838">8 (978) 237-98-38 - Дополнительный</a>
-
+                                    <a class="phone__data1" style="text-align: center"  href="tel:+79780776282">8 (978) 077-62-82 - Дополнительный</a>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +183,8 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                                    target="_blank"
                                    style="font-size: 14px; font-weight: 800; color: black; text-decoration: none" >Межквартальный проезд 11А</a>
                                 <div class="contacts-item__phone">
-                                    <a class="phone__data " id="sev" href="tel:+79782379838">8 (978) 237-98-38</a>
-                                    <a class="phone__data1"  href="tel:+79780776282">8(978) 077-62-82</a>
+                                    <a class="phone__data " id="sev" href="tel:+79783041952">8 (978) 304-19-52</a>
+                                    <a class="map-phone" href="tel:+79780776282">8 (978) 077-62-82</a>
                                 </div>
                                 <div><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
                             </div>
