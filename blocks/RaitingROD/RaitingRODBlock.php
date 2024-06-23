@@ -15,7 +15,7 @@ namespace app\blocks\RaitingROD;
 use Yii;
 //use app\blocks\Block;
 use app\blocks\Block;
-//use app\models\IndependensServices;
+
 
 /**
  * Description of ServicesBlock
@@ -24,6 +24,7 @@ use app\blocks\Block;
  */
 class RaitingRODBlock extends Block
 {
+    public $serviceParentId;
     /**
      * @var app\models\IndependensServices
      */
@@ -36,8 +37,8 @@ class RaitingRODBlock extends Block
     
     public function run() 
     {
-        ob_start();
-        include __DIR__ . '/views/block.php';
-        return ob_get_clean();
+       return $this->render([
+           'serviceParentId' => $this->serviceParentId
+       ]);
     }
 }

@@ -13,7 +13,7 @@
 use yii\helpers\Html;
 use yii\web\View;
 
-$this->registerJS("var servicesJson = " . $json . ";", View::POS_BEGIN);
+//$this->registerJS("var servicesJson = " . $json . ";", View::POS_BEGIN);
 
 ?>
 <div class="modal modal-form" id="modal-form">
