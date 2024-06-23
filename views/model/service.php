@@ -63,11 +63,15 @@ $this->registerMetaTag(['name' => 'description', 'content' => $service->name. ' 
 ]); ?>
 
 <!-- Начало рейтинга блок -->
-<?= RaitingRODBlock::block(); ?>
+<?= RaitingRODBlock::block(
+    [ 'serviceParentId' => $service->parent_id]
+); ?>
 <!-- Конец рейтинга блок -->
 
 <!-- Блок Наши работы начало -->
-<?= OurSercificateBlock::block(); ?>
+<?= OurSercificateBlock::block(
+    [ 'serviceParentId' => $service->parent_id]
+); ?>
 <!-- Конец Блока Наши работы -->
 
 <!-- Блок Акции начало -->

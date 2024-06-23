@@ -14,7 +14,8 @@
         <div class="container">
             <h2>Независимые отзывы:</h2>
 
-            <div class="raiting_description" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
+            <div class="raiting_description" itemprop="aggregateRating" itemscope="itemscope"
+                 itemtype="http://schema.org/AggregateRating">
                 <meta itemprop="worstRating" content="1">
                 <span class="stars">
                     <span class="star on"></span>
@@ -32,7 +33,9 @@
 
             <div class="raiting_block">
 
-                <a class="integrator_card" href="https://www.avito.ru/user/55996e1375acdf9d4a7ce51acad7a335/profile?src=seller_link&page_from=public_profile&review_page_from=public_profile&review_add_trigger=seller_link#open-reviews" target="_blank">
+                <a class="integrator_card"
+                   href="https://www.avito.ru/user/55996e1375acdf9d4a7ce51acad7a335/profile?src=seller_link&page_from=public_profile&review_page_from=public_profile&review_add_trigger=seller_link#open-reviews"
+                   target="_blank">
                     <div class="integrator">
                         <img class="int_logo" src="/img/integrator_logo/avito.webp">
                         <i class="int_rait">Рейтинг</i>
@@ -46,20 +49,40 @@
                         <i class="int_five">5 из 5</i>
                     </div>
                 </a>
-                <a class="integrator_card" href="https://yandex.ru/maps/-/CCUVaJFdTC" target="_blank">
-                    <div class="integrator">
-                        <img class="int_logo" src="/img/integrator_logo/yandex.webp">
-                        <i class="int_rait">Рейтинг</i>
-                        <div class="int_stars">
-                            <span class="star on"></span>
-                            <span class="star on"></span>
-                            <span class="star on"></span>
-                            <span class="star on"></span>
-                            <span class="star half"></span>
+                <?php if ($serviceParentId == 306): ?>
+
+                    <a class="integrator_card" href="https://yandex.ru/maps/-/CDvAI6ir" target="_blank">
+                        <div class="integrator">
+                            <img class="int_logo" src="/img/integrator_logo/yandex.webp">
+                            <i class="int_rait">Рейтинг</i>
+                            <div class="int_stars">
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star half"></span>
+                            </div>
+                            <i class="int_five">5.0 из 5</i>
                         </div>
-                        <i class="int_five">4.6 из 5</i>
-                    </div>
-                </a>
+                    </a>
+
+                <?php else: ?>
+                    <a class="integrator_card" href="https://yandex.ru/maps/-/CCUVaJFdTC" target="_blank">
+                        <div class="integrator">
+                            <img class="int_logo" src="/img/integrator_logo/yandex.webp">
+                            <i class="int_rait">Рейтинг</i>
+                            <div class="int_stars">
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star on"></span>
+                                <span class="star half"></span>
+                            </div>
+                            <i class="int_five">4.7 из 5</i>
+                        </div>
+                    </a>
+                <?php endif; ?>
+
                 <a class="integrator_card" href="https://goo.gl/maps/oHNYLxpZhUqjQsdS8" target="_blank">
                     <div class="integrator">
                         <img class="int_logo" src="/img/integrator_logo/google.webp">
@@ -88,9 +111,6 @@
                         <i class="int_five">5 из 5</i>
                     </div>
                 </a>
-
-
-
 
             </div>
 

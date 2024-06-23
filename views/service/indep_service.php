@@ -12,6 +12,7 @@
 
 use app\blocks\CampaignsROD\CampaignsRODBlock;
 use app\blocks\MapVMF\MapVMFBlock;
+use app\blocks\OurSercificate\OurSercificateBlock;
 use app\blocks\Ourworks\OurworksBlock;
 use app\blocks\Pricelist\PricelistBlock;
 use app\blocks\Promo\PromoBlock;
@@ -88,8 +89,16 @@ $serviceID = $service->parent_id ?: $service->id;
 <!-- Конец подпрайсовый блок -->
 
 <!-- Начало рейтинга блок -->
-<?= RaitingRODBlock::block(); ?>
+<?= RaitingRODBlock::block(
+    [ 'serviceParentId' => $service->parent_id]
+); ?>
 <!-- Конец рейтинга блок -->
+
+<!-- Блок Наши работы начало -->
+<?= OurSercificateBlock::block(
+    [ 'serviceParentId' => $serviceID]
+); ?>
+<!-- Конец Блока Наши работы -->
 
 <!-- Блок Акции начало -->
 <?= MapVMFBlock::block([

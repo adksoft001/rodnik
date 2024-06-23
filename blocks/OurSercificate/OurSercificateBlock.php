@@ -23,35 +23,30 @@ use app\models\Ourworks;
  */
 class OurSercificateBlock extends Block
 {
-    public function run() 
-    {        
-//        $ourWorks = Ourworks::find()->where(['url_page' => Yii::$app->request->url])->one();
-
+    public $serviceParentId;
+    public function run()
+    {
         $ourWorks = [
-          '0.jpg',
-          '1.jpg',
-          '3.jpg',
-          '4.jpg',
-          '5.jpg',
-          '6.jpg',
-          '7.jpg',
-          '8.jpg',
-
+            '0.jpg',
+            '1.jpg',
+            '3.jpg',
+            '4.jpg',
+            '5.jpg',
+            '6.jpg',
+            '7.jpg',
+            '8.jpg',
         ];
 
-        if($ourWorks) {
+        if ($ourWorks) {
             $itemsSlider = '';
-//            foreach(explode('|', $ourWorks->images) as $image)
-            foreach($ourWorks as $image)
-//            echo $image;
-            {
+            foreach ($ourWorks as $image) {
+                if ($this->serviceParentId == 306 && $image == '0.jpg') {
+                    $image = 'Datailing.jpg';
+                }
                 $itemsSlider .= $this->getItem($image, [], 'item_slider');
             }
             return $this->render(compact('itemsSlider'));
         }
         return '';
-//        ob_start();
-//        include __DIR__ . '/views/block.php';
-//        return ob_get_clean();
     }
 }
