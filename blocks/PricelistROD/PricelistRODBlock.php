@@ -36,7 +36,7 @@ class PricelistRODBlock extends Block
     public $serviceName;
 
     public $brand;
-//    public $model;
+    public $model;
     public $service;
 //    public $subdomain;
     public $h1;
@@ -334,9 +334,22 @@ class PricelistRODBlock extends Block
             $this->testprice = $priceWithBrand;
         }
 
+        if ($this->model && $this->model->show_price) {
+            $priceWithModel = [];
+            foreach ($price as $key => $items) {
+                $arr = [];
+                foreach ($items as $item) {
+                    $item[2] = $this->brand->url . '/' . $this->model->url . '/' . $item[2];
+                    $arr[] = $item;
+                }
+                $priceWithModel[$key] = $arr;
+            }
+            $this->testprice = $priceWithModel;
+        }
+
         if ($this->service) {
-            $item =  IndependensServices::findOne($this->service->parent_id)->toArray();
-            $this->testprice =[$item['name'] => $price[$item['name']]];
+            $item = IndependensServices::findOne($this->service->parent_id)->toArray();
+            $this->testprice = [$item['name'] => $price[$item['name']]];
         }
 
     }
@@ -380,8 +393,8 @@ class PricelistRODBlock extends Block
         return $this->render([
             'h1' => $this->h1,
             'groups' => $this->generatePriceGroups(),
-            'brandName' => $this->brandName,
-            'modelName' => $this->modelName,
+            'brandName' => isset($this->brand->name) ? $this->brand->name : null,
+            'modelName' => isset($this->model->name) ? $this->model->name : null,
             'serviceName' => $this->serviceName
         ]);
     }

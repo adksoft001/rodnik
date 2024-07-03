@@ -22,7 +22,7 @@ use app\blocks\Underprice\UnderpriceBlock;
 // Генерация метатегов
 $this->title = $service->name. ' '  . $brand->name . ' ' . $model->name . ' ' . $model->rus_name . ' цена в Евпатории | Автосервис ' . $brand->name . ' СТО Родник';
 $this->registerMetaTag(['name' => 'description', 'content' => $service->name. ' '  . $brand->name . ' ' . $model->name . ' ' . $model->rus_name .  ' ✅ Крупнейший автосервис в Евпатории. ✅ Доступные цены. ✅ Гарантия 6 месяцев.']);
-
+$this->params['serviceGroupId'] = $service;
 ?>
 
 <!-- Первый блок начало -->
@@ -52,7 +52,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => $service->name. ' 
 //
 //]); ?>
 <?= PricelistBlock::block([
-    'service' => $service
+    'service' => $service,
+    'model' => $model,
+    'brand' => $brand
 ]); ?>
 <!--Конец БЛОКА ПРАЙС-ЛИСТ-->
 

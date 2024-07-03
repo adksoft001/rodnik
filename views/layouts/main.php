@@ -144,6 +144,7 @@ $serviceGroup = isset($this->params['serviceGroupId']) ? $this->params['serviceG
                             <div class="contacts-item">
                                 <div class="contacts-item__adress"><a href="https://yandex.ru/maps/-/CCURZNGv3D" target="_blank">Евпатория, Межквартальный проезд 11А</a></div>
                                 <div class="contacts-item__phone">
+
                                     <?php if(isset($serviceGroup['url']) && ($serviceGroup['url'] === 'detejling' || $serviceGroup['parent_id'] === 306)): ?>
                                         <a class="phone__data1 " style="text-align: center"  href="tel:+79785408282"><b>8 (978) 540-82-82 - Основной телефон</b></a>
                                     <?php elseif (isset($serviceGroup['url']) && (in_array($serviceGroup['parent_id'], [4, 474, 500]) ||  in_array($serviceGroup['url'], ['pokraska-kuzova', 'kuzovnoj-remont', 'remont-avtostekol']))):?>

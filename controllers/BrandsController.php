@@ -55,24 +55,10 @@ class BrandsController extends AppBaseController
         $this->brand->title = 'Ремонт ' . str_replace(array('(', ')'), array('', ''), $this->brand->rus_name) . ' цена - автосервис ' . $this->brand->name . ' Раннинг Моторс в Москве';
         $this->brand->description = '⭐⭐⭐⭐⭐ Качественный ремонт ' . str_replace(array('(', ')'), array('', ''), $this->brand->rus_name) . ' в Москве. 📍 Профильный автосервис ' . $this->brand->name . '. ✅ Дешевле дилера до 60%. ✅ Гарантия на ремонт 2 года. 🚀 Ремонт ' . $this->brand->name . ' по доступным ценам ⏰ Запись в автосервис «Раннинг Моторс» ☎️ 8(499)444-14-37';
         Yii::$app->seo->setData($this->brand);
-        $models = Models::find()
-            ->where(['brand_id' => $this->brand->id])
-            ->andWhere(['status' => 1])
-            ->all();
-
-        //redirect
-        error_log($this->brand->name . " Brand name");
-//            VarDumper::dump($this->brand);
-//                exit();
-//                if(Subdomains::getStatusBrand($this->brand->url) == false){
-//                    $url= "http://".$this->brand->url_subdomain;
-//                    return Yii::$app->response->redirect($url, 301);
-//                }
 
         return $this->render('item', [
             'core' => $core,
             'brand' => $this->brand,
-//                    'models' => $models
         ]);
 
 

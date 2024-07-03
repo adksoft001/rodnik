@@ -21,6 +21,8 @@ use app\blocks\RepareCar\RepareCarBlock;
 use app\blocks\UnderpriceROD\UnderpriceRODBlock;
 use app\helpers\Subdomains;
 
+
+
 // Генерация метатегов
 $this->title = $core->getTitle('Ремонт ' . $brand->name . ' ' . $brand->rus_name . ' цена в Евпатории | Автосервис ' . $brand->name . ' СТО Родник', true);
 $this->registerMetaTag(['name' => 'description', 'content' => 'Крупнейший автосервис ' . $brand->name . ' в Евпатории. ✅ Ремонт и обслуживание ' . $brand->rus_name . '. ✅ Свой магазин автозапчастей. ✅ Гарантия 6 месяцев. ⏰ Записаться в техцентр ' . $brand->name . ' «СТО Родник» ☎️ 8(978)077-62-82.']);
@@ -54,7 +56,6 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => $core->getKeywords($b
 
 <!-- Начало БЛОКА ПРАЙС-ЛИСТ-->
 <?= PricelistRODBlock::block([
-    'brandName' => $brand->name,
     'brand' => $brand
 ]); ?>
 <!--Конец БЛОКА ПРАЙС-ЛИСТ-->
