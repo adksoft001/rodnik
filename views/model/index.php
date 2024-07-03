@@ -75,8 +75,8 @@ if (Subdomains::getStatus() == false) {
 
 <!-- Начало БЛОКА ПРАЙС-ЛИСТ-->
 <?= PricelistRODBlock::block([
-    'brandName' => $brand->name,
-    'modelName' => $model->name,
+    'model' => $model,
+    'brand' => $brand
 ]); ?>
 <!--Конец БЛОКА ПРАЙС-ЛИСТ-->
 

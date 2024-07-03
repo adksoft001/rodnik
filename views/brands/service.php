@@ -28,6 +28,7 @@ use yii\widgets\Breadcrumbs;
 $this->title = $core->getTitle($service->name .' '. $brand->name . ' ' . $brand->rus_name . ' цена в Евпатории | Автосервис «СТО Родник»', true);
 $this->registerMetaTag(['name' => 'description', 'content' => $service->name .' '. $brand->name . ' ✅ Крупнейший автосервис в Евпатории. ✅ Доступные цены. ✅ Гарантия 6 месяцев.']);
 
+$this->params['serviceGroupId'] = $service;
 
 ?>
 
@@ -72,7 +73,8 @@ $this->registerMetaTag(['name' => 'description', 'content' => $service->name .' 
 //
 //]); ?>
 <?= PricelistBlock::block([
-    'service' => $service
+    'service' => $service,
+    'brand' => $brand
 ]); ?>
 <!--Конец БЛОКА ПРАЙС-ЛИСТ-->
 
