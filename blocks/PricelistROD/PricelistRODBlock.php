@@ -326,7 +326,7 @@ class PricelistRODBlock extends Block
             foreach ($price as $key => $items) {
                 $arr = [];
                 foreach ($items as $item) {
-                    $item[2] = $this->brand->url . '/' . $item[2];
+                    $item[2] = strtolower($this->brand->url) . '/' . $item[2];
                     $arr[] = $item;
                 }
                 $priceWithBrand[$key] = $arr;
@@ -339,7 +339,7 @@ class PricelistRODBlock extends Block
             foreach ($price as $key => $items) {
                 $arr = [];
                 foreach ($items as $item) {
-                    $item[2] = $this->brand->url . '/' . $this->model->url . '/' . $item[2];
+                    $item[2] = strtolower($this->brand->url) . '/' . strtolower($this->model->url) . '/' . $item[2];
                     $arr[] = $item;
                 }
                 $priceWithModel[$key] = $arr;
