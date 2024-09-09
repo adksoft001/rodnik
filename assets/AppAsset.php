@@ -34,6 +34,7 @@ class AppAsset extends AssetBundle
         'css/footer.css',
         'css/tehosmotr.css',
         'css/libs/jquery.fancybox.min.css',
+        'css/vide_widget.css'
     ];
     
     public $js = [
@@ -46,6 +47,7 @@ class AppAsset extends AssetBundle
         'js/simple-adaptive-slider.js',
         'js/slider.js',
         'js/map.js',
+        "js/video-widget.js"
 
     ];
     
