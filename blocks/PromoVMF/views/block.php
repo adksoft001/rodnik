@@ -14,7 +14,7 @@
 
 ?>
 
-<?php if (in_array($serviceId, [474, 4, 500]) ) :?>
+<?php if (in_array($serviceId, [474, 4, 500])) : ?>
     <div class="accordion_anchor" id="header_about_us">
         <div class="container-vmf">
             <div class="about_company">
@@ -75,7 +75,8 @@
                             <img src="/img/rodnik/about_company/icon/1.svg" alt="">
                             <div class="about_company__block__right__item__text">
                                 <p>ВСЕ В ОДНОМ МЕСТЕ</p>
-                                <small>Крупнейший автосервис в Евпатории - Детейлинг, слесарный и кузовной ремонт, техосмотр.</small>
+                                <small>Крупнейший автосервис в Евпатории - Детейлинг, слесарный и кузовной ремонт,
+                                    техосмотр.</small>
                             </div>
                         </div>
                         <div class="about_company__block__right__item">
@@ -104,7 +105,7 @@
             </div>
         </div>
     </div>
-<?php elseif ($serviceId == 306) :?>
+<?php elseif ($serviceId == 306) : ?>
     <div class="accordion_anchor" id="header_about_us">
         <div class="container-vmf">
             <div class="about_company">
@@ -206,6 +207,15 @@
                             <div class="slider__wrapper">
                                 <div class="slider__items">
                                     <!--                            {% for i in 1..10 %}-->
+                                    <div class="slider__item">
+                                        <div class="youtube">
+                                            <div class="play-button" id="videoContainer"></div>
+                                        </div>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAEsAQMAAABqmCH0AAAAA1BMVEX///+nxBvIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKElEQVR4nO3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAACAtwFD+AAB2kI1ugAAAABJRU5ErkJggg=="
+                                             data-src="/img/rodnik/about_company/11.png"
+                                             class="lazy" alt="test">
+                                        <iframe id="youtubeVideo"  src="" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                    </div>
                                     <div class="slider__item">
                                         <img class="all_block" src="/img/rodnik/about_company/1.jpg" alt="img">
                                     </div>

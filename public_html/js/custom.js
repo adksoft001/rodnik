@@ -17,6 +17,17 @@ $( document ).ready(function() {
       });
    }
 
+   document.getElementById('videoContainer').addEventListener('click', function() {
+      // Скрыть изображения
+      document.querySelector('.slider__item img.lazy').style.display = 'none';
+      document.querySelector('.play-button').style.display = 'none';
+
+      // Показать видео
+      const iframe = document.getElementById('youtubeVideo');
+      iframe.src = "https://rutube.ru/play/embed/b1a365d335b5c97e31e51d3c5f3dbf38/";
+
+      iframe.style.display = 'block'; // Показать iframe
+   });
 
 // //Переменная для включения/отключения индикатора загрузки
 //    var spinner1 = $('.ymap-container1').children('.loader');
