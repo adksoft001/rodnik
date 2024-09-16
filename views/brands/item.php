@@ -16,6 +16,7 @@ use app\blocks\Modelslider\ModelsliderBlock;
 use app\blocks\OurSercificate\OurSercificateBlock;
 use app\blocks\PricelistROD\PricelistRODBlock;
 use app\blocks\Promo\PromoBlock;
+use app\blocks\PromoVMF\PromoVMFBlock;
 use app\blocks\RaitingROD\RaitingRODBlock;
 use app\blocks\RepareCar\RepareCarBlock;
 use app\blocks\UnderpriceROD\UnderpriceRODBlock;
@@ -49,6 +50,12 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => $core->getKeywords($b
     'subdomain' => Subdomains::getStatus()
 ]); ?>
 <!-- Конец Блок со слайдером моделей авто -->
+
+<!--Блов КМВ-->
+<?= PromoVMFBlock::block([
+    'brand' => $brand,
+]); ?>
+<!--Блок ВМФ конец-->
 
 <!-- Блок Акции начало -->
 <?= CampaignsRODBlock::block(); ?>
