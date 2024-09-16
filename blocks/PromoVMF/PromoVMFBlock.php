@@ -22,34 +22,14 @@ use app\blocks\Block;
  */
 class PromoVMFBlock extends Block
 {
-    
-    public $h1;
-    public $brandName;
-    public $modelName;
-    public $detailing;
-    public $groupId;
+    public $brand;
+    public $model;
     public $serviceId;
-    
-    public function init()
-    {
-        parent::init();
-        $this->h1 = is_null($this->h1) ? Yii::$app->controller->currentPage->header : $this->h1;
-        if(!empty($this->brandName) || !empty($this->modelName)){
-            $this->h1 .= ' в Москве';
-        }
-        $this->brandName = is_null($this->brandName) ? '' : ' ' . $this->brandName;
-        $this->modelName = is_null($this->modelName) ? '' : ' ' . $this->modelName;
-        $this->groupId = is_null($this->groupId) ? null : $this->groupId;
-    }
-    
     public function run() 
     {
         return $this->render([
-            'h1' => $this->h1,
-            'brandName' => $this->brandName,
-            'modelName' => $this->modelName,
-            'detailing' => $this->detailing,
-            'groupId' => $this->groupId,
+            'brand' => $this->brand,
+            'model' => $this->model,
             'serviceId' => $this->serviceId
         ]);
     }

@@ -15,6 +15,7 @@ use app\blocks\MapVMF\MapVMFBlock;
 use app\blocks\OurSercificate\OurSercificateBlock;
 use app\blocks\PricelistROD\PricelistRODBlock;
 use app\blocks\Promo\PromoBlock;
+use app\blocks\PromoVMF\PromoVMFBlock;
 use app\blocks\RaitingROD\RaitingRODBlock;
 use app\blocks\RepareCar\RepareCarBlock;
 use app\blocks\UnderpriceROD\UnderpriceRODBlock;
@@ -68,6 +69,13 @@ if (Subdomains::getStatus() == false) {
     'subdomain' => Subdomains::getStatus()
 ]); ?>
 <!-- Конец Блока РЕМОНТ АВТО -->
+
+<!--Блов КМВ-->
+<?= PromoVMFBlock::block([
+        'model' => $model,
+        'brand' => $brand,
+]); ?>
+<!--Блок ВМФ конец-->
 
 <!-- Блок Акции начало -->
 <?= CampaignsRODBlock::block(); ?>
