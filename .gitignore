@@ -61,6 +61,8 @@ node_modules/
 # folder for uploaded media files (images, videos ...)
 /public_html/upload/*
 /public_html/uploads/*
+public_html/img
+public_html/video
 
 # file robots.txt for production
 /public_html/robots.txt
