@@ -65,3 +65,7 @@ node_modules/
 # file robots.txt for production
 /public_html/robots.txt
 /public_html/.htaccess2
+
+runtime/logs
+runtime/debug
+runtime/cache

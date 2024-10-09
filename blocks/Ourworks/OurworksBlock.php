@@ -23,13 +23,12 @@ use app\models\Ourworks;
  */
 class OurworksBlock extends Block
 {
-    public function run() 
-    {        
+    public function run()
+    {
         $ourWorks = Ourworks::find()->where(['url_page' => Yii::$app->request->url])->one();
-        if($ourWorks) {
+        if ($ourWorks) {
             $itemsSlider = '';
-            foreach(explode('|', $ourWorks->images) as $image) 
-            {
+            foreach (explode('|', $ourWorks->images) as $image) {
                 $itemsSlider .= $this->getItem($image, [], 'item_slider');
             }
             return $this->render(compact('itemsSlider'));

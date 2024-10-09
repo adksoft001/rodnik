@@ -11,12 +11,11 @@
  */
 
 use yii\helpers\Html;
-$height = null;
 
+$height = null;
 if (strrpos('detailing', $item)) {
     $height = 327;
 }
-
 ?>
 
 <?= Html::a(Html::img('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', ['data-lazy' => '/uploads/images/ourworks/' . $item, 'height' => $height]), '/uploads/images/ourworks/' . $item, ['class' => 'rabotiblock-slider-s', 'data-fancybox' => "images"]); ?>
