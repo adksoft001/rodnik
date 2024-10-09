@@ -1,0 +1,19 @@
+<?php
+
+/*
+ * 24.11.2020
+ * File: item.php
+ * Encoding: UTF-8
+ * Project: RMS special for Quality Motors team
+ *
+ * Author: Gafuroff Alexandr
+ * E-mail: gafuroff.al@yandex.ru
+ */
+
+use yii\helpers\Html;
+$height = 220;
+
+
+?>
+
+<?= Html::a(Html::img('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', ['data-lazy' => '/uploads/images/services/' . $item, 'height' => $height, 'width' => 329]), '/uploads/images/services/' . $item, ['class' => 'rabotiblock-slider-s', 'data-fancybox' => "images"]); ?>
